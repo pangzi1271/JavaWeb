@@ -13,18 +13,18 @@ public class JdbcUtil {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-    public Connection getConnection() {
-        try {
-            connection = DriverManager.getConnection("http://localhost:3360/bjpowernode", "root", "1234");
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        return connection;
-    }
+    // public Connection getConnection() {
+    //     try {
+    //         connection = DriverManager.getConnection("http://localhost:3360/bjpowernode", "root", "1234");
+    //     } catch (SQLException throwables) {
+    //         throwables.printStackTrace();
+    //     }
+    //     return connection;
+    // }
 
     public PreparedStatement createStatement(String sql){
         try {
-            Connection connection = getConnection();
+            connection = DriverManager.getConnection("http://localhost:3360/bjpowernode", "root", "1234");
             ps = connection.prepareStatement(sql);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
