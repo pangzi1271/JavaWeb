@@ -22,6 +22,5 @@ public class UserDao {
             util.close();
         }
         return result;
-
     }
 }
