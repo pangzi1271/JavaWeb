@@ -11,18 +11,6 @@ public class JdbcUtil {
             }
     }
 
-
-        // ResultSet rs = null;
-
-    // public Connection getConnection() {
-    //     try {
-    //         connection = DriverManager.getConnection("http://localhost:3306/bjpowernode", "root", "1234");
-    //     } catch (SQLException throwables) {
-    //         throwables.printStackTrace();
-    //     }
-    //     return connection;
-    // }
-
     public PreparedStatement createStatement(String sql){
 
         try {
