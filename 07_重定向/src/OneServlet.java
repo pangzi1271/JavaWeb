@@ -12,5 +12,4 @@ public class OneServlet extends HttpServlet {
         // 使用sendRedirect()方法重定向到/myWeb/two这个资源文件
         response.sendRedirect("/myWeb/two");
     }
-
 }
