@@ -4,7 +4,7 @@ public class Users {
     public Users() {
     }
 
-    public Users(String userName, String sex, String password, String email) {
+    public Users(String userName, String password, String sex, String email) {
         this.userName = userName;
         this.sex = sex;
         this.password = password;
