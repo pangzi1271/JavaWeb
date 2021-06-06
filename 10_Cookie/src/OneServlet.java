@@ -21,6 +21,7 @@ public class OneServlet extends HttpServlet {
         response.addCookie(cardMoney);
 
         //4. 通知Tomcat将“点餐页面”内容写入到响应体交给浏览器(请求转发)
+        //getRequestDispatcher(String s)这个方法为请求转发，将这个类中的参数转发给它带的参数，也就是转发给一个网页
         request.getRequestDispatcher("OrderFood.html").forward(request, response);
     }
 }
