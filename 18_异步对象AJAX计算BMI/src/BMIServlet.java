@@ -1,5 +1,7 @@
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,22 +13,24 @@ public class BMIServlet extends HttpServlet {
         String weight = request.getParameter("weight");
         String height = request.getParameter("height");
 
-        PrintWriter pw = response.getWriter();
-        response.setContentType("text/html;charset=utf-8");
+        float bmi = Float.parseFloat(weight) / (Float.parseFloat(height) * Float.parseFloat(height));
 
-        //计算BMI
-        float bmi = Integer.parseInt(weight) / (Integer.parseInt(height) * Integer.parseInt(height));
-
-        //判断体重特征
+        String msg = "";
         if (bmi <= 18.5) {
-            pw.print(name + "先生/女士，您的体型偏瘦！");
+            msg = "你的体型偏瘦。";
         }else if (bmi > 18.5 && bmi <= 24) {
-            pw.print(name + "先生/女士，您的体型正常，请注意保持！");
-        }else if (bmi >24 && bmi <=27) {
-            pw.print(name + "先生/女士，您的体型偏胖，请注意饮食！");
+            msg = "你的体型正常！";
+        }else if (bmi > 24 && bmi <= 30) {
+            msg = "你的体型偏胖！";
         }else {
-            pw.print(name + "先生/女士，您的体型肥胖，请加强锻炼！");
+            msg = "你的体型过于肥胖！";
         }
+
+        msg = name + "先生/女士，你好。你的BMI是" + bmi + "，" + msg;
+
+        response.setContentType("text/html;charset=utf-8");
+        PrintWriter pw = response.getWriter();
+        pw.print(msg);
         pw.flush();
         pw.close();
     }
