@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单属性过滤器</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+      $(function () {
+
+          //获取所有可以使用的text
+          $("#btn1").click(function () {
+              let obj = $(":text:enabled");
+              obj.val("hello");
+          })
+
+          //获取选中的checkbox
+          $("#btn2").click(function () {
+              let obj = $(":checkbox:checked");
+              for (let i = 0; i < obj.length; i++) {
+                  alert($(obj[i]).val());
+              }
+          })
+
+          //获取select选中的值
+          $("#btn3").click(function () {
+              // let obj = $("select>option:selected");
+              let obj = $("#Coding_Languages>option:selected")
+              for (let i = 0; i < obj.length; i++) {
+                  alert($(obj[i]).val());
+              }
+          })
+      })
+  </script>
+</head>
+<body>
+<input type="text" value="text1"><br/>
+<input type="text" value="text2" disabled><br/>
+<input type="text" value="text3"><br/>
+<input type="text" value="text4" disabled><br/><br/>
+
+<input type="checkbox" value="游泳">游泳<br/>
+<input type="checkbox" value="健身" checked>健身<br/>
+<input type="checkbox" value="游戏" checked>游戏<br/>
+<select id="Coding_Languages">
+  <option>请选择你最擅长的语言</option>
+  <option value="Java">Java语言</option>
+  <option value="Go">GO语言</option>
+  <option value="Python">Python语言</option>
+  <option value="C++">C++语言</option>
+  <option value="C#">C#语言</option>
+</select><br/><br/><br/>
+
+<hr color="red"><br/><br/>
+<input type="button" id="btn1" value="设置可填写的文本框为hello"/><br/>
+<button id="btn2">显示选中的复选框的值</button>
+<br/>
+<button id="btn3">显示选中下拉列表框的值</button>
+<br/>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JQuery函数</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+      $(function () {
+          //显示第一个文本框的值
+          $("#btn1").click(function () {
+              alert($(":text").val()) ;
+          })
+
+          //设置所有文本框的值
+          $("#btn2").click(function () {
+              $(":text").val("三国演义");
+          })
+
+          //获取所有div的文本值，并将结果拼接为一个字符串返回
+          $("#btn3").click(function () {
+              alert($("div").text());
+          })
+
+          $("#btn5").on("click", function (){
+              $("div:last").append("<div>4. 我是第四个div</div>");
+          })
+      })
+  </script>
+</head>
+<body>
+<label for="txt1"></label><input type="text" id="txt1" value="刘备"><br/>
+<label for="txt2"></label><input type="text" id="txt2" value="关羽" disabled><br/>
+<label for="txt3"></label><input type="text" id="txt3" value="张飞"><br/>
+<label for="txt4"></label><input type="text" id="txt4" value="赵云" disabled><br/>
+  <br/>
+
+<div>1.我第一个div</div>
+<div>2.我第二个div</div>
+<div>3.我第三个div</div><br/><br/>
+
+<hr/><br/><br/>
+  <input type="button" id="btn1" value="获取第一文本框的值"><br/><br/>
+  <button id="btn2">设置所有文本框的value值</button><br/><br/>
+  <button id="btn3">获取所有div的文本值</button><br/><br/>
+  <button id="btn4">获取所有div的文本值</button><br/><br/>
+<button id="btn5">增加一个div</button>
+</body>
+</html>

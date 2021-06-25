@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--JQuery对象转Dom对象-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery对象转Dom对象</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    function btnClick() {
+
+      //将JQuery对象转换为dom对象，因为JQuery对象是一个数组，所以要使用下标来获取相应的数据
+      let obj = $("#txt")[0];
+
+      //输出信息
+      alert(obj.value);
+    }
+  </script>
+</head>
+<body>
+<input type="button" id="txt" value="这是个JQuery对象" onclick="btnClick()">
+</body>
+</html>

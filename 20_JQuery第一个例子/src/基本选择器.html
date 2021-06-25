@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本选择器</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        function selector1() {
+            //基本选择器之id选择器，语法：$("#dom对象的id值")
+            let obj = $("#one");
+            //使用jquery中改变样式的函数
+            obj.css("background", "red");
+        }
+
+        function selector2() {
+            //基本选择器之.class选择器，语法：$(".class样式名")
+            let obj = $(".two");
+            obj.css("background", "green");
+        }
+
+        function selector3() {
+            //基本选择器之标签选择器，语法：$("标签名")
+            //obj这个数组中的3个对象
+            let obj = $("div");
+            $(obj[2]).css("background", "blue");//选择第三个div更改背景色
+        }
+
+        function selector4() {
+            let obj = $("*");
+            obj.css("background", "orange");
+        }
+
+        function selector5() {
+            let obj = $("#one, span");
+            $(obj[0]).css("background", "orange");//选择id是one的div,更改背景色
+           $(obj[1]).css("background", "yellow");//选择span,更改背景色
+        }
+    </script>
+</head>
+<body>
+<div id="one">我的ID是one的div</div>
+<div class="two">我是样式是two的div</div>
+<div>我是没有id，class的div</div>
+<span class="two">我是span标签</span><br/>
+<input type="button" value="获取id是one的dom对象" onclick="selector1()"><br/>
+<input type="button" value="获取class是two的dom对象" onclick="selector2()"><br/>
+<input type="button" value="使用标签选择器" onclick="selector3()"><br/>
+<input type="button" value="选择'所有'选择器" onclick="selector4()"><br/>
+<input type="button" value="选择'部分'选择器" onclick="selector5()">
+</body>
+</html>

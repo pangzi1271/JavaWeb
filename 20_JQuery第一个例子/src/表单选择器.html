@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单选择器</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        function btnClick01() {
+            let obj = $(":text");
+            alert(obj.val())
+        }
+
+        function btnClick02() {
+            let obj = $(":radio");
+            for (let i = 0; i < obj.length; i++) {
+                let jobj = $(obj[i]);
+                alert(jobj.val())
+            }
+        }
+
+        function btnClick03() {
+            let obj = $(":checkbox");
+            for (let i = 0; i < obj.length; i++) {
+                let jobj = $(obj[i]);
+                alert(jobj.val())
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" value="我是type=text"><br/>
+<input type="radio" name="gender" value="男">男<br/>
+<input type="radio" name="gender" value="女">女<br/><br/>
+<input type="checkbox" value="骑行">骑行<br/>
+<input type="checkbox" value="足球">足球<br/>
+<input type="checkbox" value="音乐">音乐<br/>
+<input type="button" value="获取text的值" onclick="btnClick01()"><br/>
+<input type="button" value="获取radio的值" onclick="btnClick02()"><br/>
+<input type="button" value="获取checkbox的值" onclick="btnClick03()"><br/>
+
+</body>
+</html>

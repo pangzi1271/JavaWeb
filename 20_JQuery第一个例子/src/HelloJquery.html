@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloJQuery</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        function btnClick(){
+            let obj = document.getElementById("btn");
+            // alert("DOM对象的属性 = " + obj.value);
+
+            let jobj = $(obj);
+            alert(jobj.val());
+
+            //JQuery标准写法
+            $(document).ready(function(){
+                alert("Hello JQuery!")
+            })
+
+            //JQuery简化写法
+            $(function (){
+                alert("Hello JQuery again!")
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="button" id="btn" value="确定Confirm" onclick="btnClick()">
+
+</body>
+</html>
