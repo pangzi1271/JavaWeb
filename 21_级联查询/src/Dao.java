@@ -1,15 +1,17 @@
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Dao {
 
     JdbcUtil util = new JdbcUtil();
-
+    ResultSet rs = null;
     public Province provinceInfo(Integer provinceId) {
         String sql = "select name, jiancheng, shenghui from province where id = ?";
         PreparedStatement ps = util.createStatement(sql);
-        ResultSet rs = null;
+
         Province province = null;
         try {
             ps.setInt(1, provinceId);
@@ -44,5 +46,48 @@ public class Dao {
             util.close();
         }
         return result;
+    }
+
+    public List<Province> provinceQuery() {
+        String sql = "select id, name, jiancheng, shenghui from province order by id";
+        PreparedStatement ps = util.createStatement(sql);
+        List<Province> provinces = new ArrayList<>();
+        try {
+            rs = ps.executeQuery();
+            while(rs.next()){
+                Province province = new Province();
+                province.setProvinceId(rs.getInt("id"));
+                province.setProvinceName(rs.getString("name"));
+                province.setProvinceShortName(rs.getString("jiancheng"));
+                province.setCapital(rs.getString("shenghui"));
+                provinces.add(province);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }finally {
+            util.close(rs);
+        }
+        return provinces;
+    }
+
+    public List<City> cityInfo(Integer provinceId) {
+        String sql = "select name from city where provinceId = ?";
+        PreparedStatement ps = util.createStatement(sql);
+        List<City> cityList = new ArrayList<>();
+        try {
+            ps.setInt(1,provinceId);
+          rs =  ps.executeQuery();
+          while (rs.next()){
+              City city = new City();
+              city.setCityName(rs.getString("name"));
+//              city.set(rs.getInt("id"));
+              cityList.add(city);
+          }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } finally {
+            util.close(rs);
+        }
+        return cityList;
     }
 }

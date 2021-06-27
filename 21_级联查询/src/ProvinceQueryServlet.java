@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 public class ProvinceQueryServlet extends HttpServlet {
     @Override
@@ -15,16 +16,14 @@ public class ProvinceQueryServlet extends HttpServlet {
         String json = "{}";
 
         //从浏览器获取请求参数
-        String provinceId = request.getParameter("provinceId");
+        Dao provinces = new Dao();
+        List<Province> provinceList = provinces.provinceQuery();
 
         //判断provinceId是否有值，
-        if (provinceId != null && provinceId.trim().length() > 0){
-            Dao provinceDao = new Dao();
-            Province province = provinceDao.provinceInfo(Integer.valueOf(provinceId));
-
-            //需要使用jackson把Province对象转为json
+        if (provinceList != null ){
+           //需要使用jackson把Province对象转为json
             ObjectMapper om = new ObjectMapper();
-            json = om.writeValueAsString(province);
+            json = om.writeValueAsString(provinceList);
         }
 
         //将数据返回给浏览器

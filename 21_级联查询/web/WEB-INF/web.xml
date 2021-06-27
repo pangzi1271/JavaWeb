@@ -7,8 +7,16 @@
         <servlet-name>ProvinceQueryServlet</servlet-name>
         <servlet-class>ProvinceQueryServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CityQueryServlet</servlet-name>
+        <servlet-class>CityQueryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProvinceQueryServlet</servlet-name>
         <url-pattern>/province</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CityQueryServlet</servlet-name>
+        <url-pattern>/cityQuery</url-pattern>
     </servlet-mapping>
 </web-app>
