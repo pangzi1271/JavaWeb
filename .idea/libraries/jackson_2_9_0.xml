@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jackson-2.9.0">
+    <CLASSES>
+      <root url="jar://C:/Program Files/apache-tomcat-10.0.6/lib/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://C:/Program Files/apache-tomcat-10.0.6/lib/jackson-core-2.9.0.jar!/" />
+      <root url="jar://C:/Program Files/apache-tomcat-10.0.6/lib/jackson-databind-2.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/02_Servlet接口实现类/02_Servlet接口实现类.iml" filepath="$PROJECT_DIR$/02_Servlet接口实现类/02_Servlet接口实现类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Sersvlet生命周期/03_Sersvlet生命周期.iml" filepath="$PROJECT_DIR$/03_Sersvlet生命周期/03_Sersvlet生命周期.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_HttpServletRequest/05_HttpServletRequest.iml" filepath="$PROJECT_DIR$/05_HttpServletRequest/05_HttpServletRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-在线考试管理系统一/06-在线考试管理系统一.iml" filepath="$PROJECT_DIR$/06-在线考试管理系统一/06-在线考试管理系统一.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_在线考试管理系统/06_在线考试管理系统.iml" filepath="$PROJECT_DIR$/06_在线考试管理系统/06_在线考试管理系统.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_重定向/07_重定向.iml" filepath="$PROJECT_DIR$/07_重定向/07_重定向.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_请求转发/08_请求转发.iml" filepath="$PROJECT_DIR$/08_请求转发/08_请求转发.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_ServletContext/09_ServletContext.iml" filepath="$PROJECT_DIR$/09_ServletContext/09_ServletContext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_Cookie/10_Cookie.iml" filepath="$PROJECT_DIR$/10_Cookie/10_Cookie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_HttpSession/11_HttpSession.iml" filepath="$PROJECT_DIR$/11_HttpSession/11_HttpSession.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_filter/12_filter.iml" filepath="$PROJECT_DIR$/12_filter/12_filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14_JSP文件Java命令书写规则/14_JSP文件Java命令书写规则.iml" filepath="$PROJECT_DIR$/14_JSP文件Java命令书写规则/14_JSP文件Java命令书写规则.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15_Servlet与JSP联合调用/15_Servlet与JSP联合调用.iml" filepath="$PROJECT_DIR$/15_Servlet与JSP联合调用/15_Servlet与JSP联合调用.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16_JSON实现服务端与JavaScript之间数据通信/16_JSON实现服务端与JavaScript之间数据通信.iml" filepath="$PROJECT_DIR$/16_JSON实现服务端与JavaScript之间数据通信/16_JSON实现服务端与JavaScript之间数据通信.iml" />
+      <module fileurl="file://$PROJECT_DIR$/17_JSON工具包的使用/17_JSON工具包的使用.iml" filepath="$PROJECT_DIR$/17_JSON工具包的使用/17_JSON工具包的使用.iml" />
+      <module fileurl="file://$PROJECT_DIR$/18_异步对象AJAX计算BMI/18_异步对象AJAX计算BMI.iml" filepath="$PROJECT_DIR$/18_异步对象AJAX计算BMI/18_异步对象AJAX计算BMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19_异步对象AJAX访问数据库/19_异步对象AJAX访问数据库.iml" filepath="$PROJECT_DIR$/19_异步对象AJAX访问数据库/19_异步对象AJAX访问数据库.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21_级联查询/21_级联查询.iml" filepath="$PROJECT_DIR$/21_级联查询/21_级联查询.iml" />
+    </modules>
+  </component>
+</project>

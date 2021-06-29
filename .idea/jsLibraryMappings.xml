@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/02_Servlet接口实现类" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/03_Sersvlet生命周期" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/05_HttpServletRequest" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/06-在线考试管理系统一" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/06_在线考试管理系统" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/07_重定向" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/08_请求转发" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/09_ServletContext" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/10_Cookie" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/11_HttpSession" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/12_filter" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/14_JSP文件Java命令书写规则" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/15_Servlet与JSP联合调用" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/16_JSON实现服务端与JavaScript之间数据通信" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/17_JSON工具包的使用" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/18_异步对象AJAX计算BMI" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/19_异步对象AJAX访问数据库" libraries="{jquery-3.6.0}" />
+    <file url="file://$PROJECT_DIR$/21_级联查询" libraries="{jquery-3.6.0}" />
+  </component>
+</project>
